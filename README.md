@@ -2,11 +2,11 @@
 
 A modern, full-featured real-time chat application built with the MERN stack (MongoDB, Express.js, React, Node.js) featuring WebSocket communication for instant messaging, public/private rooms, and media sharing capabilities.
 
-## 📋 Project Overview
+##  Project Overview
 
 This is a production-ready chat application inspired by platforms like Slack, WhatsApp, and Microsoft Teams. It provides users with a seamless experience for real-time communication through multiple chat channels, one-to-one messaging, and media sharing with complete message persistence.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Technology | Version | Purpose |
 |------------|---------|---------|
@@ -23,36 +23,36 @@ This is a production-ready chat application inspired by platforms like Slack, Wh
 | **React Router** | 6.x+ | Client-side routing |
 | **React Hot Toast** | 2.x+ | Toast notifications |
 
-## ✨ Key Features
+##  Key Features
 
 ### Core Features
-- ✅ **Real-time Chat** - Instant message delivery using WebSockets (Socket.io)
-- ✅ **Public Rooms** - Anyone can discover and join public chat rooms
-- ✅ **Private Rooms** - Create password-protected rooms with custom passphrases
-- ✅ **One-to-One Messaging** - Direct private conversations between users via name/email search
-- ✅ **Message Persistence** - All messages saved to MongoDB for chat history
-- ✅ **Media Sharing** - Send and receive images and files
-- ✅ **Message Management** - Edit, unsend (delete for me/everyone), and reactions
+-  **Real-time Chat** - Instant message delivery using WebSockets (Socket.io)
+-  **Public Rooms** - Anyone can discover and join public chat rooms
+-  **Private Rooms** - Create password-protected rooms with custom passphrases
+-  **One-to-One Messaging** - Direct private conversations between users via name/email search
+-  **Message Persistence** - All messages saved to MongoDB for chat history
+-  **Media Sharing** - Send and receive images and files
+-  **Message Management** - Edit, unsend (delete for me/everyone), and reactions
 
 ### Must-Have Features
-- ✅ **Authentication** - Secure JWT-based authentication with bcrypt password hashing
-- ✅ **User Profiles** - Display user information, avatars, and online status
-- ✅ **Responsive Design** - Mobile-first responsive UI for all devices
-- ✅ **Typing Indicators** - See when other users are typing
-- ✅ **Online Status** - Real-time user online/offline status
-- ✅ **Room Management** - Create, delete, and leave rooms; admin controls
+-  **Authentication** - Secure JWT-based authentication with bcrypt password hashing
+-  **User Profiles** - Display user information, avatars, and online status
+-  **Responsive Design** - Mobile-first responsive UI for all devices
+-  **Typing Indicators** - See when other users are typing
+-  **Online Status** - Real-time user online/offline status
+-  **Room Management** - Create, delete, and leave rooms; admin controls
 
 ### Advanced Features
-- 🔐 **JWT Token Authentication** - Secure HTTP and WebSocket connections
-- 🔒 **Password Protection** - Private rooms with passkey security
-- 📁 **File Uploads** - Image and document sharing with Multer
-- 💬 **Room Types** - Public, Private with Passkey, and One-to-One
-- 👥 **User Search** - Find and message users by username or email
-- 🎨 **Modern UI** - Clean, intuitive interface with dark theme support
-- 📱 **Mobile Responsive** - Works seamlessly on all screen sizes
-- 🔔 **Real-time Notifications** - Toast notifications for important events
+-  **JWT Token Authentication** - Secure HTTP and WebSocket connections
+-  **Password Protection** - Private rooms with passkey security
+-  **File Uploads** - Image and document sharing with Multer
+-  **Room Types** - Public, Private with Passkey, and One-to-One
+-  **User Search** - Find and message users by username or email
+-  **Modern UI** - Clean, intuitive interface with dark theme support
+-  **Mobile Responsive** - Works seamlessly on all screen sizes
+-  **Real-time Notifications** - Toast notifications for important events
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
@@ -269,7 +269,7 @@ realtime-chaat-app/
 | GET | `/user/profile` | Get current user profile |
 | PUT | `/user/profile` | Update user profile |
 
-## 🔒 Authentication Flow
+##  Authentication Flow
 
 1. **Registration**: User creates account with email and password
    - Password hashed with bcryptjs
@@ -289,7 +289,7 @@ realtime-chaat-app/
    - Token verified via middleware
    - User ID extracted from token payload
 
-## 📝 User Guide
+##  User Guide
 
 ### Creating an Account
 1. Navigate to http://localhost:3000
@@ -372,7 +372,7 @@ lsof -ti:3000 | xargs kill -9
 - Verify `MAX_FILE_SIZE` in `.env` (default: 10MB)
 - Check file permissions
 
-## 🚀 Deployment
+##  Deployment
 
 For deployment to production, see [DEPLOYMENT.md](./DEPLOYMENT.md)
 
@@ -385,7 +385,7 @@ For deployment to production, see [DEPLOYMENT.md](./DEPLOYMENT.md)
 - [ ] Set up HTTPS/SSL certificates
 - [ ] Deploy to Heroku, AWS, DigitalOcean, or similar
 
-## 📦 Building for Production
+##  Building for Production
 
 ```bash
 # Build frontend
@@ -401,7 +401,7 @@ npm install --production
 
 This project is open source and available under the MIT License.
 
-## 👨‍💻 Developer Information
+##  Developer Information
 
 ### System Requirements
 - **OS**: Windows 10+, macOS 10.14+, or Linux
@@ -415,7 +415,7 @@ This project is open source and available under the MIT License.
 - MongoDB Compass (Database Management)
 - Git & GitHub (Version Control)
 
-## 📢 Real-World Relevance
+##  Real-World Relevance
 
 This application is inspired by and serves as a foundation similar to:
 - **Slack** - Team communication and channels
@@ -430,7 +430,7 @@ It demonstrates real-world concepts used in production systems including:
 - Real-time notifications
 - User presence tracking
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please follow these steps:
 1. Fork the repository
@@ -439,7 +439,7 @@ Contributions are welcome! Please follow these steps:
 4. Push to branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## ❓ FAQ
+##  FAQ
 
 **Q: Can I use this with MongoDB Atlas?**
 A: Yes! Replace the local MongoDB URI with your Atlas connection string.
@@ -456,7 +456,7 @@ A: Messages are stored indefinitely in MongoDB.
 **Q: Can I export chat history?**
 A: Not currently, but can be added as a feature.
 
-## 📧 Support
+##  Support
 
 For issues, questions, or suggestions:
 - Create an issue on GitHub
@@ -467,7 +467,7 @@ For issues, questions, or suggestions:
 
 **Last Updated**: April 8, 2026  
 **Version**: 1.0.0  
-**Status**: ✅ Production Ready
+**Status**:  Production Ready
 
 ### WebSocket Connection Failed
 ```
@@ -487,7 +487,7 @@ rm -rf node_modules package-lock.json
 npm install
 ```
 
-## 📚 Dependencies
+##  Dependencies
 
 ### Backend (server/package.json)
 | Package | Version | Purpose |
@@ -513,17 +513,17 @@ npm install
 | react-icons | ^4.8.0 | Icon library |
 | date-fns | ^2.30.0 | Date formatting |
 
-## 📄 License
+##  License
 
 MIT License - See LICENSE file for details
 
-## 👥 Authors
+##  Authors
 
 GLN Varaprasad
 
 
 
-## 🔗 Resources
+##  Resources
 
 - [Node.js Documentation](https://nodejs.org/docs/)
 - [Express.js Guide](https://expressjs.com/)
@@ -532,7 +532,7 @@ GLN Varaprasad
 - [Socket.io Documentation](https://socket.io/docs/)
 - [JWT Guide](https://jwt.io/introduction)
 
-## ✨ Future Enhancements
+##  Future Enhancements
 
 
 - Voice/video call integration
