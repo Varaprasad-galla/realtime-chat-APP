@@ -173,7 +173,7 @@ Frontend runs on `http://localhost:3000`
 2. Create a new account or login with existing credentials
 3. Start chatting!
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 realtime-chaat-app/
@@ -237,7 +237,7 @@ realtime-chaat-app/
 └── GETTING_STARTED.md        # Quick start guide
 ```
 
-## 🔌 API Endpoints
+##  API Endpoints
 
 ### Authentication Routes (`/auth`)
 | Method | Endpoint | Description |
@@ -312,7 +312,7 @@ realtime-chaat-app/
 5. Click "Create Room"
 
 ### Joining a Room
-1. In the sidebar, click Browse Rooms (🔍)
+1. In the sidebar, click Browse Rooms 
 2. Search for public or private rooms
 3. For public rooms: Click "Join"
 4. For private rooms: Enter passkey in the modal and click "Join"
@@ -334,7 +334,7 @@ realtime-chaat-app/
 3. Click on the user to start a conversation
 4. One-to-one chat opens automatically
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### MongoDB Connection Issues
 ```bash
@@ -397,7 +397,7 @@ cd ../server
 npm install --production
 ```
 
-## 📄 License
+##  License
 
 This project is open source and available under the MIT License.
 
