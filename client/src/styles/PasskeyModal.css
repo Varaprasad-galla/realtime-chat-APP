@@ -1,0 +1,135 @@
+.passkey-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.passkey-modal .modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.passkey-modal .modal-content {
+  position: relative;
+  background-color: var(--card-background);
+  border-radius: 8px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-color);
+}
+
+.passkey-modal h2 {
+  margin: 0 0 15px 0;
+  color: var(--text-primary);
+  font-size: 20px;
+}
+
+.passkey-modal .room-name {
+  margin: 0 0 20px 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.passkey-modal .hint {
+  margin: 0 0 20px 0;
+  color: var(--text-tertiary);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.passkey-modal .form-group {
+  margin-bottom: 20px;
+}
+
+.passkey-modal label {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.passkey-modal input {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--input-background);
+  color: var(--text-primary);
+  box-sizing: border-box;
+}
+
+.passkey-modal input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  background-color: var(--input-background);
+}
+
+.passkey-modal .modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.passkey-modal .btn-cancel {
+  flex: 1;
+  background-color: var(--card-background);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  padding: 12px;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.passkey-modal .btn-cancel:hover {
+  background-color: #334155;
+}
+
+.passkey-modal .btn-join {
+  flex: 1;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.passkey-modal .btn-join:hover {
+  background-color: #4f46e5;
+}
+
+.passkey-modal .btn-join:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+  .passkey-modal .modal-content {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .passkey-modal h2 {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,163 @@
+.direct-chat-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.direct-chat-modal .modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.direct-chat-modal .modal-content {
+  position: relative;
+  background-color: var(--card-background);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 450px;
+  max-height: 80vh;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.direct-chat-modal .modal-header {
+  padding: 20px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.direct-chat-modal h2 {
+  margin: 0;
+  color: var(--text-primary);
+  font-size: 18px;
+}
+
+.direct-chat-modal .btn-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.direct-chat-modal .btn-close:hover {
+  color: var(--text-primary);
+}
+
+.direct-chat-modal .search-box {
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.direct-chat-modal .search-box input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--input-background);
+  color: var(--text-primary);
+  box-sizing: border-box;
+}
+
+.direct-chat-modal .search-box input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.direct-chat-modal .users-list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.direct-chat-modal .user-item {
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.direct-chat-modal .user-item:hover {
+  background-color: rgba(79, 70, 229, 0.1);
+}
+
+.direct-chat-modal .user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border-color);
+}
+
+.direct-chat-modal .user-info {
+  flex: 1;
+}
+
+.direct-chat-modal .user-name {
+  margin: 0;
+  color: var(--text-primary);
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.direct-chat-modal .user-status {
+  display: inline-block;
+  color: var(--text-tertiary);
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.direct-chat-modal .user-status.online {
+  color: #10b981;
+  font-weight: 500;
+}
+
+.direct-chat-modal .user-status.away {
+  color: #f59e0b;
+}
+
+.direct-chat-modal .user-status.offline {
+  color: #6b7280;
+}
+
+.direct-chat-modal .loading,
+.direct-chat-modal .no-users {
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--text-tertiary);
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .direct-chat-modal .modal-content {
+    margin: 20px;
+    max-height: 70vh;
+  }
+
+  .direct-chat-modal h2 {
+    font-size: 16px;
+  }
+}
